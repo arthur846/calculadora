@@ -8,7 +8,10 @@ interface IpropsButtonText {
     toggle : boolean
 }
 
-const Painel : React.FC<IpropsButtonText> = ({status, preStatus, list})=>{
+const Painel : React.FC<IpropsButtonText> = ({status, preStatus, list, toggle})=>{
+        const styleStatus = toggle ? StylePainel.status : StylePainel.preStatus
+        const stylePreStatus = !toggle ? StylePainel.status : StylePainel.preStatus
+
         return (
             <View style={StylePainel.container}>
                 <FlatList
@@ -16,12 +19,12 @@ const Painel : React.FC<IpropsButtonText> = ({status, preStatus, list})=>{
                     style={StylePainel.listContainer}
                     renderItem={({item})=>{
                         return(                            
-                            <Text>{item}</Text>                            
+                            <Text style={StylePainel.item}>{item}</Text>                            
                         )
                     }}
                 />
-                <Text style={StylePainel.status}>{status}</Text>
-                <Text style={StylePainel.preStatus}>{preStatus}</Text>
+                <Text style={styleStatus}>{status}</Text>
+                <Text style={stylePreStatus}>{preStatus}</Text>
             </View>
         )
     }

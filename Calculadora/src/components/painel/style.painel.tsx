@@ -31,9 +31,14 @@ const StylePainel = StyleSheet.create({
     listContainer:{
         width: '100%',
         height: 200,
+        flexDirection: 'column-reverse',
     },
     item:{
-
+        backgroundColor: 'blue',
+        width: 310,
+        color: 'gray',
+        fontSize: 25,
+        textAlign: 'right',
     },
 })
 
