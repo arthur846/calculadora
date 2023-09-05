@@ -5,9 +5,6 @@ const StylePainel = StyleSheet.create({
         height: 400,
     },
     status: {
-        borderWidth: 2,
-        borderColor: '#f0efed',
-        borderRadius: 15,
         width: 310,
         margin: 3,
         fontSize: 28,
@@ -17,9 +14,6 @@ const StylePainel = StyleSheet.create({
         paddingRight: 8,
     },
     preStatus: {
-        borderWidth: 2,
-        borderColor: '#f0efed',
-        borderRadius: 15,
         width: 310,
         margin: 3,
         fontSize: 45,
@@ -34,7 +28,6 @@ const StylePainel = StyleSheet.create({
         flexDirection: 'column-reverse',
     },
     item:{
-        backgroundColor: 'blue',
         width: 310,
         color: 'gray',
         fontSize: 25,
